@@ -41,32 +41,22 @@ export default function Create(props) {
         User Details
       </Typography>
       <Avatar className={classes.avatar}>{user?.name.charAt(0)}</Avatar>
-
       <Typography variant="h6">
         <Box>
-          <br /> Name:{user?.name}
+          <br /> Name: {user?.name}
         </Box>
       </Typography>
 
       <Typography variant="h6">
-        <Box>Username:{user?.username}</Box>
+        <Box>Username: {user?.username}</Box>
       </Typography>
       <Typography variant="h6" component="div">
-        <Box>
-          Email:
-          {user?.email}
-        </Box>
-        <Box>
-          Phone:
-          {user?.phone}
-        </Box>
-        <Box>
-          Company:
-          {user?.company.name}
-        </Box>
+        <Box>Email: {user?.email}</Box>
+        <Box>Phone: {user?.phone}</Box>
+        <Box>Company: {user?.company.name}</Box>
         <Box>
           Website:
-          <Link>{user?.website}</Link>
+          <Link> {user?.website}</Link>
         </Box>
         <Box>
           Address: <br />
